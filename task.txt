@@ -1,0 +1,13 @@
+Create a basic view using EJS/any templating engine or if you know React, then you can use it as well for the following:
+
+1) Using JWT authentication, create a sign up/sign in flow to log the users in. done.
+2) Create a database which have Books and Authors collections.  done.
+3) In your application, after signing the user in, Give the user ability to create Authors and Books. done.
+4) A single Book should be link to an author(relationship). An author can be related to multiple books. done.
+5) Create a basic table to display all the books(book details) along with their authors where the user can see all the books and who is the author of that book. done.
+6) Implement the ability to delete a book. done.
+
+Database Design:
+
+Authors: Name,Age,Date Of Birth
+Books: Name, Published On, Price

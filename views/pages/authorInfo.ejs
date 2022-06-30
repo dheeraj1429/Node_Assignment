@@ -1,0 +1,37 @@
+<%- include('../includes/header.ejs') %>
+     <%- include('../includes/navbar.ejs') %>
+
+          <div class="container">
+               <div class="row justify-content-center">
+                    <div class="8">
+                         <table class="table">
+                              <thead>
+                                   <tr>
+                                        <% for(let i=0;i<allAuthors.length;i++) { %>
+                                             <th scope="col">
+                                                  <%= allAuthors[i].name %>
+                                             </th>
+                                             <% } %>
+                                   </tr>
+                              </thead>
+                              <tbody>
+                                   <tr>
+                                        <% for(let i=0;i<allAuthors.length;i++) { %>
+                                             <th scope="col">
+                                                  <% for(let j=0;j<allAuthors[i].books.length;j++) { %>
+                                                       <p>
+                                                            Book Name <%= allAuthors[i].books[j].bookId.name %>
+                                                       </p>
+                                                       <p>Price :<%= allAuthors[i].books[j].bookId.price %>
+
+                                                       </p>
+                                                       <% } %>
+                                             </th>
+                                             <% } %>
+                                   </tr>
+                              </tbody>
+                         </table>
+                    </div>
+               </div>
+          </div>
+          <%- include('../includes/footer.ejs') %>
